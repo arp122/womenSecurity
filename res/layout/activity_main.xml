@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/tvValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nil" 
+        />
+
+    <Button
+        android:id="@+id/btGps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvValue"
+        android:layout_centerHorizontal="true"
+        android:text="Gps"
+        android:onClick="gps_location_toast" />
+
+    <Button
+        android:id="@+id/btMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btGps"
+        android:layout_below="@+id/btGps"
+        android:layout_marginTop="46dp"
+        android:text="Message"
+        android:onClick="Send_Message" />
+
+    <Button
+        android:id="@+id/btStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btMessage"
+        android:layout_centerVertical="true"
+        android:text="StartRec" 
+        android:onClick="startRec"/>
+
+    <Button
+        android:id="@+id/btStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btStart"
+        android:layout_below="@+id/btStart"
+        android:layout_marginTop="42dp"
+        android:text="StopRec"
+        android:onClick="stopRec" />
+
+    <TextView
+        android:id="@+id/tvLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvValue"
+        android:layout_below="@+id/btGps"
+        android:layout_marginTop="29dp"
+        android:text="Location"
+        android:autoLink="map" 
+        android:clickable="true"
+        android:onClick="Location"/>
+
+    <Button
+        android:id="@+id/btContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btStop"
+        android:layout_below="@+id/btStop"
+        android:layout_marginTop="29dp"
+        android:text="Contacts"
+        android:onClick="Contacts" />
+
+    <Button
+        android:id="@+id/btSig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btMessage"
+        android:layout_toRightOf="@+id/btMessage"
+        android:text="Signal"
+        android:onClick="Signal" />
+
+    <TextView
+        android:id="@+id/tvSignal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btSig"
+        android:layout_below="@+id/btSig"
+        android:layout_marginTop="14dp"
+        android:text="Signal" />
+
+    <Button
+        android:id="@+id/btMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvLoc"
+        android:layout_below="@+id/btMessage"
+        android:text="mail"
+        android:onClick="mail" />
+
+    <Button
+        android:id="@+id/btGpsStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btMail"
+        android:layout_below="@+id/btStart"
+        android:text="GpsStat"
+        android:onClick="GpsStatus" />
+
+    <Button
+        android:id="@+id/btBat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btGpsStat"
+        android:layout_below="@+id/btStop"
+        android:text="BatLevel" 
+        android:onClick="BatLevel"/>
+
+</RelativeLayout>

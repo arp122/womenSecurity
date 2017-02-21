@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" 
+    android:background="#4b5a6a"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="Message"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:text="Please help me .I am in danger.Follow me using following cordinates"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:background="#222f3e"
+        android:textColor="#FFFFFF" 
+        android:paddingBottom="3dp"
+        android:layout_weight="50"
+        
+        >
+
+    </EditText>
+<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="Contacts"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="\t"/>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Add contact"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" 
+        android:clickable="true"
+        android:onClick="Contacts"/>
+
+    
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvContacts"
+        android:layout_width="match_parent"
+        android:layout_height="209dp"
+        android:background="#222f3e"
+        android:paddingTop="3dp"
+        android:layout_weight="50" >
+    </ListView>
+
+</LinearLayout>
